@@ -6,6 +6,9 @@ on:
       - main
   schedule: 
     - cron: "0 12 * * *" # 半天更新一次
+    
+permissions:
+  contents: write
 
 jobs:
   update-card:
