@@ -31,7 +31,7 @@ const {
     const record = await user_record({
         cookie: `MUSIC_U=${USER_TOKEN}`,
         uid: USER_ID,
-        type: 1,
+        type: 0,
     }).catch(error => console.error(`无法获取用户播放记录 \n${error}`));
 
     const content = record.body;
